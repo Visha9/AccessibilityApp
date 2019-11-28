@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutHeight_Wrap"
+    android:background="@color/LightGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/LayoutHeight_Wrap"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:background="@drawable/ic_rounded_corners_white"
+        android:orientation="vertical"
+        android:padding="@dimen/_5dp">
+
+        <Button
+            android:id="@+id/btnForgetPassword"
+            style="@style/LoginHelpDialogButtonWhite"
+            android:text="@string/forgot_username" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/DarkGray" />
+
+        <Button
+            android:id="@+id/btnResetPassword"
+            style="@style/LoginHelpDialogButtonWhite"
+            android:text="@string/reset_password" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/LoginHelpDialogButtonWhite"
+        android:layout_margin="@dimen/_10dp"
+        android:background="@drawable/ic_rounded_corners_white"
+        android:text="@string/cancel"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

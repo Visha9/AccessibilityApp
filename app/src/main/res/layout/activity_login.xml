@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutFullScreen"
+    android:background="@color/White">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/LayoutFullScreen"
+        android:background="@color/White"
+        android:padding="@dimen/_10dp"
+        tools:context=".MainActivity">
+
+        <ImageButton
+            android:id="@+id/imageView"
+            style="@style/LayoutWrap"
+            android:background="@color/White"
+            android:contentDescription="@string/help"
+            android:focusable="true"
+            android:minWidth="@dimen/_50dp"
+            android:minHeight="@dimen/_50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_announcement_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_hello"
+            style="@style/LayoutWrap"
+            android:minHeight="@dimen/_50dp"
+            android:text="@string/hello"
+            android:textColor="@color/DarkBlue"
+            android:textSize="@dimen/_36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/text_glad"
+            style="@style/LayoutWrap"
+            android:minHeight="@dimen/_50dp"
+            android:text="@string/glad_u_r_here"
+            android:textColor="@color/DarkBlue"
+            android:textSize="@dimen/_22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_hello"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_username"
+            style="@style/LayoutHeight_Wrap"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_glad">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_username"
+                style="@style/LayoutHeight_Wrap"
+                android:focusable="true"
+                android:hint="@string/username"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:minHeight="@dimen/_50dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_password"
+            style="@style/LayoutHeight_Wrap"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_input_username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/LayoutHeight_Wrap"
+                android:focusable="true"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:minHeight="@dimen/_50dp"
+                android:textColor="@color/DarkBlue"
+                android:textSize="@dimen/_18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Switch
+            android:id="@+id/switchRememberMe"
+            style="@style/LayoutWrap"
+            android:layout_margin="@dimen/_10dp"
+            android:focusable="true"
+            android:minHeight="@dimen/_50dp"
+            android:text="@string/rememberme"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_input_password"
+            app:switchPadding="@dimen/_10dp" />
+
+        <TextView
+            android:id="@+id/text_login_help"
+            style="@style/LayoutWrap"
+            android:layout_margin="@dimen/_10dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_50dp"
+            android:text="@string/login_help"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_input_password" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/LayoutHeight_Wrap"
+            android:layout_margin="@dimen/_10dp"
+            android:focusable="true"
+            android:minHeight="@dimen/_50dp"
+            android:padding="@dimen/_8dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchRememberMe" />
+
+
+        <TextView
+            android:id="@+id/text_create"
+            style="@style/LayoutHeight_Wrap"
+            android:layout_margin="@dimen/_10dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:minHeight="@dimen/_50dp"
+            android:text="@string/create_a_username_and_password"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+
+            />
+
+        <TextView
+            android:id="@+id/text_not_a_customer"
+            style="@style/LayoutHeight_Wrap"
+            android:gravity="center"
+            android:minHeight="@dimen/_50dp"
+            android:text="@string/not_a_u_s_bank_customer"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_create"
+
+            />
+
+        <TextView
+            android:id="@+id/text_explore"
+            style="@style/LayoutHeight_Wrap"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:hint="@string/login_help"
+            android:minHeight="@dimen/_50dp"
+            android:text="@string/explore_loans_cards_more"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_not_a_customer" />
+
+
+        <TextView
+            android:id="@+id/text_tour"
+            style="@style/LayoutHeight_Wrap"
+            android:layout_marginTop="@dimen/_40dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:minHeight="@dimen/_50dp"
+            android:text="@string/tour_the_app"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_explore" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

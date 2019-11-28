@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/view_accounts" />
+        <item
+            android:id="@+id/nav_transfer"
+
+            android:title="@string/transfer_deposit_and_pay" />
+        <item
+            android:id="@+id/explore"
+            android:title="@string/explore_products_and" />
+        <item
+            android:id="@+id/login"
+            android:title="@string/login_preferences" />
+        <item
+            android:id="@+id/notifications"
+            android:title="@string/notifications" />
+        <item
+            android:id="@+id/nav_manage"
+            android:title="@string/manage_cards" />
+        <item
+            android:id="@+id/statement"
+            android:title="@string/statements_and_docs" />
+        <item
+            android:id="@+id/help"
+            android:title="@string/help_and_services" />
+    </group>
+
+
+</menu>

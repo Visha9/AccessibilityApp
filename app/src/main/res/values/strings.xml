@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">AccessibilityApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!--Login Screen Strings -->
+    <string name="hello">Hello!</string>
+    <string name="glad_u_r_here">Glad you\'re here</string>
+    <string name="enter_username">Please Enter your username</string>
+    <string name="enter_password">Please Enter your password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="rememberme">  Remember Me</string>
+    <string name="login_help">Login Help</string>
+    <string name="login">Log In</string>
+    <string name="create_a_username_and_password">Create a Username and Password</string>
+    <string name="not_a_u_s_bank_customer">Not a U.S. Bank customer?</string>
+    <string name="explore_loans_cards_more"><![CDATA[Explore loans, cards & more]]></string>
+    <string name="tour_the_app">Tour the app</string>
+    <string name="help">Help</string>
+    <string name="forgot_username">Forgot Username?</string>
+    <string name="reset_password">Reset Password?</string>
+    <string name="cancel">Cancel</string>
+
+    <!--    Drawer Strings-->
+    <string name="view_accounts">View Accounts</string>
+    <string name="transfer_deposit_and_pay"><![CDATA[Transfer, deposit & pay]]></string>
+    <string name="explore_products_and"><![CDATA[Explore product & offer]]></string>
+    <string name="login_preferences">Login Preference</string>
+    <string name="notifications">Notifications</string>
+    <string name="manage_cards">Manage Cards</string>
+    <string name="statements_and_docs"><![CDATA[Statemets & docs]]></string>
+    <string name="help_and_services"><![CDATA[Help & Services]]></string>
+    <string name="log_out">Logout</string>
+
+    <!--    Drawer Items-->
+    <string-array name="dashboard_drawer_items">
+        <item>@string/view_accounts</item>
+        <item>@string/transfer_deposit_and_pay</item>
+        <item>@string/explore_products_and</item>
+        <item>@string/login_preferences</item>
+        <item>@string/notifications</item>
+        <item>@string/manage_cards</item>
+        <item>@string/notifications</item>
+        <item>@string/statements_and_docs</item>
+        <item>@string/help_and_services</item>
+
+    </string-array>
+
+
+
+
+</resources>
