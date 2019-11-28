@@ -45,20 +45,12 @@ open class BaseActivity: AppCompatActivity() {
         return false
     }
 
-
-
-
-    fun setNavigationDrawer(){
-
-
-
-
-
-
-
-
-
+    fun setHeaderTitle(title : String){
+        supportActionBar?.title=title
     }
+
+
+
 
 
 

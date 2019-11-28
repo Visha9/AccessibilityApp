@@ -44,21 +44,28 @@
     <string name="help_and_services"><![CDATA[Help & Services]]></string>
     <string name="log_out">Logout</string>
 
-    <!--    Drawer Items-->
-    <string-array name="dashboard_drawer_items">
-        <item>@string/view_accounts</item>
-        <item>@string/transfer_deposit_and_pay</item>
-        <item>@string/explore_products_and</item>
-        <item>@string/login_preferences</item>
-        <item>@string/notifications</item>
-        <item>@string/manage_cards</item>
-        <item>@string/notifications</item>
-        <item>@string/statements_and_docs</item>
-        <item>@string/help_and_services</item>
+
+    <!--    Tab Host Array -->
+    <string-array name="tab_items">
+        <item>@string/transfer</item>
+        <item>@string/deposit</item>
+        <item>@string/pay_bill</item>
+        <item>@string/send</item>
+        <item>@string/shop</item>
 
     </string-array>
 
-
+    <string name="transfer">Transfer</string>
+    <string name="deposit">Deposit</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="send">Send</string>
+    <string name="shop">Shop</string>
+    <string name="insight_updates"><![CDATA[Insight & Updates]]></string>
+    <string name="this_is_account_activity">This is account activity</string>
+    <string name="you_have_1_upcoming_payment">you have 1 upcoming payment</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="title_account">Accounts</string>
+    <string name="menu_account">View Accounts</string>
 
 
 </resources>
