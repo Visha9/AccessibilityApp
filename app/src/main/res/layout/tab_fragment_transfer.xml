@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
     android:background="@color/DarkBlue"
     android:orientation="vertical">
 
@@ -14,6 +15,7 @@
         android:contentDescription="@string/glad_u_r_here"
         android:text="@string/glad_u_r_here"
         android:textColor="@color/White"
+        android:focusable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +27,7 @@
         android:text="@string/welcome_back"
         android:textColor="@color/White"
         android:textSize="@dimen/_22sp"
+        android:focusable="true"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title_transfer_layout"
@@ -35,7 +38,8 @@
         android:id="@+id/text_1_transfer_layout"
         style="@style/TextSmallStyle"
         android:layout_margin="@dimen/_5dp"
-        android:contentDescription="@string/this_is_account_activity"
+        android:focusable="true"
+        android:accessibilityTraversalAfter="@id/text_sub_title_transfer_layout"
         android:text="@string/this_is_account_activity"
         android:textColor="@color/White"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +59,8 @@
         android:layout_margin="@dimen/_5dp"
         android:contentDescription="@string/menu_account"
         android:text="@string/menu_account"
+        android:focusable="true"
+        android:accessibilityTraversalAfter="@id/text_1_transfer_layout"
         android:textColor="@color/White"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line1_transfer_layout" />

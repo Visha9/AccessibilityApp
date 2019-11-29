@@ -15,12 +15,10 @@ import com.uidemo.ui.viewmodel.TransferTabViewModel
 
 class TransferTabFragment : Fragment() {
 
-    private lateinit var transferTabViewModel: TransferTabViewModel
+    private lateinit var transferTabViewModel : TransferTabViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
 
         transferTabViewModel = ViewModelProviders.of(this).get(TransferTabViewModel::class.java)
 

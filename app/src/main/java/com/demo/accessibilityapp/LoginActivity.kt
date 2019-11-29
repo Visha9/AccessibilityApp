@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -19,8 +20,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         var btnLoginHelp = findViewById<TextView>(R.id.text_login_help)
         var buttonLogin = findViewById<Button>(R.id.buttonLogin)
+        val helpIB = findViewById<ImageButton>(R.id.image_help)
         buttonLogin.setOnClickListener(this)
         btnLoginHelp.setOnClickListener(this)
+        helpIB.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -38,15 +41,23 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                     Toast.LENGTH_SHORT
                 ).show()
             }
-            R.id.btnResetPassword->{
+            R.id.btnResetPassword -> {
                 Toast.makeText(
                     applicationContext,
                     getString(R.string.reset_password),
                     Toast.LENGTH_SHORT
                 ).show()
             }
+            R.id.image_help -> {
+                goToHelpActivity()
             }
+        }
 
+    }
+
+    fun goToHelpActivity() {
+        val intent = Intent(this, HelpActivity::class.java)
+        startActivity(intent)
     }
 
     fun goToMainActivity() {
@@ -68,7 +79,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
 
         btnForgetPassword.setOnClickListener(this)
-        btnResetPassword.setOnClickListener (this)
+        btnResetPassword.setOnClickListener(this)
         btnCancel.setOnClickListener { dialogView ->
             Toast.makeText(applicationContext, getString(R.string.cancel), Toast.LENGTH_SHORT)
                 .show()

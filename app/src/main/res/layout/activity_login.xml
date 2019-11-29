@@ -13,7 +13,7 @@
         tools:context=".MainActivity">
 
         <ImageButton
-            android:id="@+id/imageView"
+            android:id="@+id/image_help"
             style="@style/LayoutWrap"
             android:background="@color/White"
             android:contentDescription="@string/help"
@@ -33,7 +33,7 @@
             android:textSize="@dimen/_36sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/helpIB" />
 
         <TextView
             android:id="@+id/text_glad"
@@ -146,17 +146,13 @@
 
         <TextView
             android:id="@+id/text_not_a_customer"
-            style="@style/LayoutHeight_Wrap"
+            style="@style/TextHelpScreen"
+            android:layout_width="match_parent"
             android:gravity="center"
-            android:minHeight="@dimen/_50dp"
             android:text="@string/not_a_u_s_bank_customer"
             android:textColor="@color/Black"
-            android:textSize="@dimen/_18sp"
-            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_create"
-
-            />
+            app:layout_constraintTop_toBottomOf="@+id/text_create" />
 
         <TextView
             android:id="@+id/text_explore"

@@ -100,5 +100,13 @@
 
     </style>
 
+    <style name="TextHelpScreen" parent="LayoutWrap">
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/_50dp</item>
+
+
+    </style>
+
 
 </resources>

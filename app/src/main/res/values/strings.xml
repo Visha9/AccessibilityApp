@@ -66,6 +66,15 @@
     <string name="welcome_back">Welcome back!</string>
     <string name="title_account">Accounts</string>
     <string name="menu_account">View Accounts</string>
+    <string name="search_help_topics">Search Help Topics</string>
+    <string name="get_more_information_about">Get more information about :</string>
+    <string name="how_do_i_send_money_to_a_person">How do I send money to a person?</string>
+    <string name="how_do_i_check_my_messages">How do I check my messages?</string>
+    <string name="how_can_i_increase_security_onmy_smartphone_or_tablet">How can I increase security onmy smartphone or tablet?</string>
+    <string name="guided_help">Guided Help</string>
+    <string name="get_help_sending_money">Get help sending money</string>
+    <string name="cobrowise">Cobrowise</string>
+    <string name="app_version_">App Version: 3.0.1</string>
 
 
 </resources>

@@ -21,10 +21,13 @@ class RecylerListAdapter(val items: ArrayList<String>, val context: Activity?) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder?.tvAnimalType?.text = items.get(position)
+        holder?.tvTitle?.text = items.get(position)
+        holder?.tvTitle?.contentDescription = items.get(position)
+
+
     }
 }
 
 class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    val tvAnimalType = view.findViewById<TextView>(R.id.text_title_listitem)
+    val tvTitle = view.findViewById<TextView>(R.id.text_title_listitem)
 }

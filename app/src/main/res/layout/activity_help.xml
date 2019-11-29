@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_15dp">
+
+
+    <TextView
+        android:id="@+id/helpTitleTV"
+        style="@style/LayoutWrap"
+        android:gravity="center_horizontal"
+        android:text="@string/help"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        style="@style/LayoutWrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+    <EditText
+        android:id="@+id/searchET"
+        style="@style/LayoutHeight_Wrap"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:hint="@string/search_help_topics"
+        android:minHeight="@dimen/_50dp"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/Black"
+        android:padding="@dimen/_10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpTitleTV" />
+
+    <TextView
+        android:id="@+id/infoTV"
+        style="@style/TextHelpScreen"
+        android:layout_marginTop="@dimen/_15dp"
+        android:gravity="center_vertical"
+        android:text="@string/get_more_information_about"
+        android:textColor="@color/DarkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchET" />
+
+    <TextView
+        android:id="@+id/sendTV"
+        style="@style/TextHelpScreen"
+        android:text="@string/how_do_i_send_money_to_a_person"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoTV" />
+
+    <TextView
+        android:id="@+id/checkTV"
+        style="@style/TextHelpScreen"
+        android:text="@string/how_do_i_check_my_messages"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendTV" />
+
+    <TextView
+        android:id="@+id/securityTV"
+        style="@style/TextHelpScreen"
+        android:text="@string/how_can_i_increase_security_onmy_smartphone_or_tablet"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkTV" />
+
+    <View
+        android:id="@+id/viewVW"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/Gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/securityTV" />
+
+
+    <TextView
+        android:id="@+id/helpTV"
+        style="@style/TextHelpScreen"
+        android:layout_marginTop="@dimen/_15dp"
+        android:gravity="center_vertical"
+        android:text="@string/guided_help"
+        android:textColor="@color/DarkBlue"
+        android:textSize="@dimen/_22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewVW" />
+
+    <TextView
+        android:id="@+id/sendingTV"
+        style="@style/TextHelpScreen"
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="@string/get_help_sending_money"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpTV" />
+
+    <TextView
+        android:id="@+id/requestingTV"
+        style="@style/TextHelpScreen"
+        android:text="@string/how_do_i_send_money_to_a_person"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendingTV" />
+
+    <TextView
+        android:id="@+id/splittingTV"
+        style="@style/TextHelpScreen"
+        android:text="@string/how_do_i_send_money_to_a_person"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestingTV" />
+
+    <TextView
+        style="@style/LayoutWrap"
+        android:text="@string/cobrowise"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/LayoutWrap"
+        android:text="@string/app_version_"
+        android:textColor="@color/Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

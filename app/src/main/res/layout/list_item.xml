@@ -2,29 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/ic_rounded_corners_white"
     android:layout_margin="@dimen/_8dp"
+    android:importantForAccessibility="yes"
+    android:background="@drawable/ic_rounded_corners_white"
+    android:focusable="true"
     android:padding="@dimen/_8dp">
 
 
     <TextView
         android:id="@+id/text_title_listitem"
-        android:text="@string/this_is_account_activity"
         style="@style/TextSmallStyle"
-        android:contentDescription="@string/this_is_account_activity"
-        android:textColor="@color/Black"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_margin="@dimen/_5dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/_5dp"
+        android:contentDescription="@string/this_is_account_activity"
+        android:focusable="true"
+        android:text="@string/this_is_account_activity"
+        android:textColor="@color/Black" />
 
 
     <TextView
         android:id="@+id/text_sub_title_listitem"
         style="@style/TextLargeTitleStyle"
-        android:text="@string/you_have_1_upcoming_payment"
-        android:contentDescription="@string/you_have_1_upcoming_payment"
         android:layout_below="@+id/text_title_listitem"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:focusable="true"
+        android:contentDescription="@string/you_have_1_upcoming_payment"
+        android:text="@string/you_have_1_upcoming_payment" />
 
 
 </RelativeLayout>

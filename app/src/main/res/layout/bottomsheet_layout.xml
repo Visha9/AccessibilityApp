@@ -4,6 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_rounded_corners_gray"
+    android:importantForAccessibility="yes"
+    android:focusable="true"
+    android:id="@+id/topLL"
     android:orientation="vertical"
     app:behavior_peekHeight="@dimen/_50dp"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
@@ -18,10 +21,12 @@
 
 
     <TextView
+        android:id="@+id/text_title_bottom_sheet"
         style="@style/TextSmallStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10dp"
+        android:focusable="true"
         android:text="@string/insight_updates"
         android:textColor="@color/Black" />
 
@@ -33,28 +38,6 @@
         android:layout_height="match_parent" />
 
 
-    <!--    <TextView-->
-    <!--          android:layout_width="wrap_content"-->
-    <!--          android:layout_height="wrap_content"-->
-    <!--          android:layout_marginTop="@dimen/_20dp"-->
-    <!--          android:text="@string/help" />-->
 
-    <!--      <TextView-->
-    <!--          android:layout_width="wrap_content"-->
-    <!--          android:layout_height="wrap_content"-->
-    <!--          android:layout_marginTop="@dimen/_20dp"-->
-    <!--          android:text="@string/help" />-->
-
-    <!--      <TextView-->
-    <!--          android:layout_width="wrap_content"-->
-    <!--          android:layout_height="wrap_content"-->
-    <!--          android:layout_marginTop="@dimen/_20dp"-->
-    <!--          android:text="@string/help" />-->
-
-    <!--      <TextView-->
-    <!--          android:layout_width="wrap_content"-->
-    <!--          android:layout_height="wrap_content"-->
-    <!--          android:layout_marginTop="@dimen/_20dp"-->
-    <!--          android:text="@string/help" />-->
 
 </LinearLayout>
