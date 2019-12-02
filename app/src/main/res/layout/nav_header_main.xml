@@ -29,15 +29,17 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
+        android:contentDescription="@string/settings"
+        android:focusable="true"
         app:srcCompat="@drawable/ic_settings_black_24dp" />
 
 
     <View
         android:layout_width="match_parent"
+        android:layout_height="0.5dp"
         android:layout_below="@+id/timeTV"
         android:layout_marginTop="@dimen/_20dp"
-        android:background="@color/DarkGray"
-        android:layout_height="0.5dp"/>
+        android:background="@color/DarkGray" />
 
 </RelativeLayout>
 

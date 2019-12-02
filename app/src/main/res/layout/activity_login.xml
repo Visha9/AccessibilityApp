@@ -29,16 +29,18 @@
             style="@style/LayoutWrap"
             android:minHeight="@dimen/_50dp"
             android:text="@string/hello"
+            android:focusable="true"
             android:textColor="@color/DarkBlue"
             android:textSize="@dimen/_36sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/helpIB" />
+            app:layout_constraintTop_toBottomOf="@+id/image_help" />
 
         <TextView
             android:id="@+id/text_glad"
             style="@style/LayoutWrap"
             android:minHeight="@dimen/_50dp"
+            android:focusable="true"
             android:text="@string/glad_u_r_here"
             android:textColor="@color/DarkBlue"
             android:textSize="@dimen/_22sp"

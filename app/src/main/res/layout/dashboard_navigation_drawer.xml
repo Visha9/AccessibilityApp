@@ -28,23 +28,25 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
+            android:contentDescription="@string/settings"
+            android:focusable="true"
             app:srcCompat="@drawable/ic_settings_black_24dp" />
 
     </RelativeLayout>
 
     <View
         android:id="@+id/viewVW"
-        android:layout_below="@+id/topRL"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
+        android:layout_below="@+id/topRL"
         android:background="@color/DarkGray" />
 
     <ListView
         android:id="@+id/drawerLV"
-        android:layout_below="@+id/viewVW"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/logoutTV"
+        android:layout_below="@+id/viewVW"
         android:layout_marginBottom="@dimen/_20dp" />
 
     <TextView
@@ -52,11 +54,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/log_out"
-        android:textSize="@dimen/_16sp"
         android:padding="@dimen/_10dp"
-        android:textStyle="bold"
-        android:textColor="@color/DarkRed" />
+        android:text="@string/log_out"
+        android:textColor="@color/DarkRed"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

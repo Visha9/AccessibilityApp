@@ -75,6 +75,8 @@
     <string name="get_help_sending_money">Get help sending money</string>
     <string name="cobrowise">Cobrowise</string>
     <string name="app_version_">App Version: 3.0.1</string>
+    <string name="close_the_help_screen">Close the help screen window</string>
+    <string name="settings">Settings</string>
 
 
 </resources>

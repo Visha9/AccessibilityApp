@@ -1,5 +1,6 @@
 package com.demo.accessibilityapp
 
+import com.demo.accessibilityapp.ui.fragment.account_tab.ShopTabFragment
 import com.uidemo.ui.fragment.account_tab.*
 
 class Constants {

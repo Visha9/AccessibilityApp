@@ -22,6 +22,7 @@
         style="@style/LayoutWrap"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/close_the_help_screen"
         app:srcCompat="@drawable/ic_clear_black_24dp" />
 
     <EditText

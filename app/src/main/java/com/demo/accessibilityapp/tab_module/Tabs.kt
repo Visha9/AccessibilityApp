@@ -30,14 +30,17 @@ class Tabs(var childFragmentManager: FragmentManager) {
         viewpager_main.setAdapter(adapter)
         tabs_main.setupWithViewPager(viewpager_main)
         viewpager_main.setOffscreenPageLimit(0)
-        setupTabIcons(tabIcons)
+        setupTabIcons(tabIcons, tabsTitles)
     }
 
 
-    fun setupTabIcons(tabIcons: Array<Int>) {
+    fun setupTabIcons(tabIcons: Array<Int>, tabsTitles: Array<String>) {
 
         for (index in 0..tabIcons.size) {
             tabs_main.getTabAt(index)?.setIcon(tabIcons[index])
+            tabs_main.getTabAt(index)
+                ?.setContentDescription("tab - ,${tabsTitles[index]} ${index + 1} of ${tabsTitles.size} – selected")
+
         }
     }
 

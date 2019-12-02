@@ -1,4 +1,4 @@
-package com.uidemo.ui.fragment.account_tab
+package com.demo.accessibilityapp.ui.fragment.account_tab
 
 import android.os.Bundle
 import android.view.LayoutInflater
